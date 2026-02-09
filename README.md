@@ -45,17 +45,8 @@ Tool Python per la simulazione offline di movimenti robotici, sviluppato per ott
 | ![Trajectory](examples/outputs/trajectory_2d.png) | ![Velocity](examples/outputs/velocity_profile.png) | ![Preview](examples/outputs/project_preview.png) |
 
 
-## Installazione
-
-```bash
-git clone https://github.com/tuousername/robot-trajectory-simulator.git
-cd robot-trajectory-simulator
-pip install -r requirements.txt
-
-## Installazione
 ## Utilizzo
 
-```bash
 
 1. Genera dati demo (per test)
 
@@ -168,3 +159,11 @@ Il file report.html generato include:
 ✅ Grafici interattivi (immagini)
 ✅ Tabelle performance
 ✅ Predictive maintenance timeline
+
+
+## Installazione
+
+```bash
+git clone https://github.com/tuousername/robot-trajectory-simulator.git
+cd robot-trajectory-simulator
+pip install -r requirements.txt
