@@ -8,7 +8,7 @@ Tool Python per la simulazione offline di movimenti robotici, sviluppato per ott
 
 ## Caratteristiche Tecniche
 
-- **Profili di moto trapezoidali**: Accelerazione costante, velocità di crociera, decelerazione
+- **Profili di moto trapezoidali**: Accelerazione costante, velocità di crociera, decelerazione 
 - **Gestione zone ABB**: z0, z1, z5, z10, z20, z50, fine con calcolo deviazione pre-punto
 - **Cinematica 2D**: Interpolazione cartesiana con step temporale configurabile (default 20ms)
 - **Esportazione RAPID**: Codice sintatticamente corretto per controller IRC5
@@ -67,12 +67,12 @@ df = fetch_scada_data(start_date, end_date)
 
 ## Output
 
-oee_trend.png	Grafico	Andamento OEE 30 giorni per robot
-efficiency_comparison.png	Grafico	Benchmark KPI multi-metrica
-correlation_heatmap.png	Grafico	Matrice correlazioni
-maintenance_forecast.png	Grafico	Timeline predittiva manutenzione
-report.html	Dashboard	Report interattivo completo
-robot_data.csv	Dataset	Dati processati esportati
+oee_trend.png	Grafico	Andamento OEE 30 giorni per robot <br>
+efficiency_comparison.png	Grafico	Benchmark KPI multi-metrica <br>
+correlation_heatmap.png	Grafico	Matrice correlazioni <br>
+maintenance_forecast.png	Grafico	Timeline predittiva manutenzione <br>
+report.html	Dashboard	Report interattivo completo <br>
+robot_data.csv	Dataset	Dati processati esportati <br>
 
 ## Struttura Dati Richiesta
 
@@ -95,18 +95,18 @@ Campo calcolato automaticamente: efficienza_oee (se non presente)
 ## Formato File Input
 
 CSV (Raccomandato)
-robot_id,data,pezzi_prodotti,tempo_ciclo_medio,tempo_fermo_minuti,errori_collisione,consumo_energia_kwh,temperatura_motore_c,ore_operative
-ABB_001,2024-01-15 06:00:00,180,32.5,20,0,15.2,55.0,8
-ABB_001,2024-01-15 14:00:00,195,30.2,10,1,14.8,58.5,8
-ABB_002,2024-01-15 06:00:00,210,28.0,5,0,13.1,52.0,8
+robot_id,data,pezzi_prodotti,tempo_ciclo_medio,tempo_fermo_minuti,errori_collisione,consumo_energia_kwh,temperatura_motore_c,ore_operative <br>
+ABB_001,2024-01-15 06:00:00,180,32.5,20,0,15.2,55.0,8 <br>
+ABB_001,2024-01-15 14:00:00,195,30.2,10,1,14.8,58.5,8 <br>
+ABB_002,2024-01-15 06:00:00,210,28.0,5,0,13.1,52.0,8 <br>
 
 ## Integrazione Dati Reali
 
 Estrazione da Controller ABB
 
-RobotStudio: Esportazione log di produzione
-OPC UA: Lettura realtime variabili RAPID
-FTP dal controller: File di log ciclici
+RobotStudio: Esportazione log di produzione <br>
+OPC UA: Lettura realtime variabili RAPID <br>
+FTP dal controller: File di log ciclici <br>
 
 Esempio parsing log ABB reale
 
