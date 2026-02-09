@@ -71,12 +71,12 @@ df = fetch_scada_data(start_date, end_date)
 
 ## Output
 
-oee_trend.png	Grafico	Andamento OEE 30 giorni per robot <br>
-efficiency_comparison.png	Grafico	Benchmark KPI multi-metrica <br>
-correlation_heatmap.png	Grafico	Matrice correlazioni <br>
-maintenance_forecast.png	Grafico	Timeline predittiva manutenzione <br>
-report.html	Dashboard	Report interattivo completo <br>
-robot_data.csv	Dataset	Dati processati esportati <br>
+oee_trend.png	Grafico	    Andamento OEE 30 giorni per robot <br>
+efficiency_comparison.png	    Grafico	Benchmark KPI multi-metrica <br>
+correlation_heatmap.png	    Grafico	Matrice correlazioni <br>
+maintenance_forecast.png	    Grafico	Timeline predittiva manutenzione <br>
+report.html  	  Dashboard	Report interattivo completo <br>
+robot_data.csv	    Dataset	Dati processati esportati <br>
 
 ## Struttura Dati Richiesta
 
