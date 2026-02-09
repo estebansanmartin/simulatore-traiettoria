@@ -17,22 +17,22 @@ Tool Python per la simulazione offline di movimenti robotici, sviluppato per ott
   
 ## Funzionalità
 
-### 🔍 Analisi Descrittiva
+## 🔍 Analisi Descrittiva
 - OEE calcolato con formula completa: Disponibilità × Performance × Qualità
 - Benchmark comparativo multi-robot
 - Trend temporali con medie mobili
 
-### ⚠️ Anomaly Detection
+## ⚠️ Anomaly Detection
 - Soglie dinamiche per temperatura motore (>60°C warning, >70°C critical)
 - Pattern errori collisione anomali
 - Degradazione efficienza sotto 75%
 
-### 🔮 Predictive Maintenance
+## 🔮 Predictive Maintenance
 - Regressione trend efficienza ultimi 7 giorni
 - Predizione giorni rimanenti alla soglia critica (60% OEE)
 - Prioritizzazione interventi
 
-### 📈 Visualizzazione
+## 📈 Visualizzazione
 - Heatmap correlazioni (temperatura vs errori vs efficienza)
 - Scatter plot efficienza vs consumo energetico
 - Forecast manutenzione con color coding
@@ -59,10 +59,10 @@ Modifica la fonte dati in main():
 
 Python
 
-# Opzione A: Da CSV
+Opzione A: Da CSV
 df = pd.read_csv('dati_realiproduzione.csv')
 
-# Opzione B: Da API SCADA
+Opzione B: Da API SCADA
 df = fetch_scada_data(start_date, end_date)
 
 ## Output
@@ -92,14 +92,15 @@ Per utilizzare dati reali, il sistema si aspetta un DataFrame pandas con queste 
 
 Campo calcolato automaticamente: efficienza_oee (se non presente)
 
-#Formato File Input
+## Formato File Input
+
 CSV (Raccomandato)
 robot_id,data,pezzi_prodotti,tempo_ciclo_medio,tempo_fermo_minuti,errori_collisione,consumo_energia_kwh,temperatura_motore_c,ore_operative
 ABB_001,2024-01-15 06:00:00,180,32.5,20,0,15.2,55.0,8
 ABB_001,2024-01-15 14:00:00,195,30.2,10,1,14.8,58.5,8
 ABB_002,2024-01-15 06:00:00,210,28.0,5,0,13.1,52.0,8
 
-#Integrazione Dati Reali
+## Integrazione Dati Reali
 
 Estrazione da Controller ABB
 
@@ -107,7 +108,8 @@ RobotStudio: Esportazione log di produzione
 OPC UA: Lettura realtime variabili RAPID
 FTP dal controller: File di log ciclici
 
-#Esempio parsing log ABB reale
+Esempio parsing log ABB reale
+
 def parse_abb_log(file_path):
     """
     Estrae dati da log controller ABB (formato testo)
@@ -129,7 +131,8 @@ def parse_abb_log(file_path):
                 })
     return pd.DataFrame(records)
 
-#Connessione Database Aziendale
+## Connessione Database Aziendale
+
 import sqlalchemy
 
 def fetch_from_db(start_date, end_date):
@@ -143,6 +146,7 @@ def fetch_from_db(start_date, end_date):
     WHERE timestamp BETWEEN '{start_date}' AND '{end_date}'
     """
     return pd.read_sql(query, engine)
+    
 
 KPI Calcolati
 | KPI               | Formula                                                                 | Target Industriale |
