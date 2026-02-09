@@ -100,10 +100,10 @@ Campo calcolato automaticamente: efficienza_oee (se non presente)
 
 CSV (Raccomandato)
 ```
-robot_id,data,pezzi_prodotti,tempo_ciclo_medio,tempo_fermo_minuti,errori_collisione,consumo_energia_kwh,temperatura_motore_c,ore_operative <br>
-ABB_001,2024-01-15 06:00:00,180,32.5,20,0,15.2,55.0,8 <br>
-ABB_001,2024-01-15 14:00:00,195,30.2,10,1,14.8,58.5,8 <br>
-ABB_002,2024-01-15 06:00:00,210,28.0,5,0,13.1,52.0,8 <br>
+robot_id,data,pezzi_prodotti,tempo_ciclo_medio,tempo_fermo_minuti,errori_collisione,consumo_energia_kwh,temperatura_motore_c,ore_operative 
+ABB_001,2024-01-15 06:00:00,180,32.5,20,0,15.2,55.0,8 
+ABB_001,2024-01-15 14:00:00,195,30.2,10,1,14.8,58.5,8 
+ABB_002,2024-01-15 06:00:00,210,28.0,5,0,13.1,52.0,8 
 ```
 
 ## Integrazione Dati Reali
