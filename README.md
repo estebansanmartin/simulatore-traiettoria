@@ -50,10 +50,10 @@ Tool Python per la simulazione offline di movimenti robotici, sviluppato per ott
 
 1. Genera dati demo (per test)
 
-bash
 
+```
 python efficiency_analytics.py
-
+```
 2. Usa dati reali (vedi sezione sotto)
 Modifica la fonte dati in main():
 
@@ -63,7 +63,9 @@ Opzione A: Da CSV
 df = pd.read_csv('dati_realiproduzione.csv')
 
 Opzione B: Da API SCADA
+```
 df = fetch_scada_data(start_date, end_date)
+```
 
 ## Output
 
@@ -109,7 +111,7 @@ OPC UA: Lettura realtime variabili RAPID <br>
 FTP dal controller: File di log ciclici <br>
 
 Esempio parsing log ABB reale
-
+```
 def parse_abb_log(file_path):
     """
     Estrae dati da log controller ABB (formato testo)
@@ -130,9 +132,10 @@ def parse_abb_log(file_path):
                     # ... altri campi
                 })
     return pd.DataFrame(records)
+```
 
 ## Connessione Database Aziendale
-
+```
 import sqlalchemy
 
 def fetch_from_db(start_date, end_date):
@@ -146,6 +149,7 @@ def fetch_from_db(start_date, end_date):
     WHERE timestamp BETWEEN '{start_date}' AND '{end_date}'
     """
     return pd.read_sql(query, engine)
+```
     
 
 KPI Calcolati
