@@ -14,29 +14,6 @@ Tool Python per la simulazione offline di movimenti robotici, sviluppato per ott
 - **Esportazione RAPID**: Codice sintatticamente corretto per controller IRC5
 - **Visualizzazione**: Heatmap velocità, zone di precisione, vettori direzione
 
-  
-## Funzionalità
-
-## 🔍 Analisi Descrittiva
-- OEE calcolato con formula completa: Disponibilità × Performance × Qualità
-- Benchmark comparativo multi-robot
-- Trend temporali con medie mobili
-
-## ⚠️ Anomaly Detection
-- Soglie dinamiche per temperatura motore (>60°C warning, >70°C critical)
-- Pattern errori collisione anomali
-- Degradazione efficienza sotto 75%
-
-## 🔮 Predictive Maintenance
-- Regressione trend efficienza ultimi 7 giorni
-- Predizione giorni rimanenti alla soglia critica (60% OEE)
-- Prioritizzazione interventi
-
-## 📈 Visualizzazione
-- Heatmap correlazioni (temperatura vs errori vs efficienza)
-- Scatter plot efficienza vs consumo energetico
-- Forecast manutenzione con color coding
-
 
 ## Output
 
